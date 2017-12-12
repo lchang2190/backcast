@@ -3,6 +3,11 @@ var VideoListEntryView = Backbone.View.extend({
   
   initialize: function() {
     this.render();
+    //when entry is clicked
+      //re-render videoPlayerView with new video
+    this.on('click', function(e) {
+      console.log(e);
+    });
   },
 
   render: function() {
